@@ -3,6 +3,9 @@
 #define GRAPHIC_SYSTEM_HPP
 
 #include <iostream>
+#include <assert.h>
+
+#include <glad/glad.h>
 
 #include "System.hpp"
 
