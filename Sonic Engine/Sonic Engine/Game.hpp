@@ -15,7 +15,8 @@ public:
 	void start();
 private:
 	void run_systems();
-	EntityManager m_entity_manager;
+	void initialize();
+	EntityManager m_entity_mgr;
 	std::vector<std::unique_ptr<System>> m_systems;
 };
 

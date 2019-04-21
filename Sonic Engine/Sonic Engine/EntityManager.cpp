@@ -7,6 +7,11 @@ EntityManager::EntityManager()
 
 EntityManager::~EntityManager()
 {
+	for (Entity* entity : m_entities)
+	{
+		if (entity != nullptr)
+			delete entity;
+	}
 }
 
 EntityHandle EntityManager::create_entity()

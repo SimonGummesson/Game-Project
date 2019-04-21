@@ -6,6 +6,11 @@ ComponentManager::ComponentManager()
 
 ComponentManager::~ComponentManager()
 {
+	for (auto component_data : m_entity_components)
+	{
+		if (component_data != nullptr)
+			delete component_data;
+	}
 }
 
 void ComponentManager::remove_entity_data(int index)
